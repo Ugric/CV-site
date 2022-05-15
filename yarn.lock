@@ -915,6 +915,11 @@ globby@^11.0.4:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
+gsap@^3.10.4:
+  version "3.10.4"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.10.4.tgz#db89a6b8f6d5cb76e274eae822cbc1aa4d31e88f"
+  integrity sha512-6QatdkKxXCMfvCW4rM++0RqyLQAzFX5nwl3yHS0XPgkZBkiSEY3VZVbMltrdtsbER/xZonLtyHt684wRp4erlQ==
+
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/has-bigints/-/has-bigints-1.0.2.tgz#0871bd3e3d51626f6ca0966668ba35d5602d6eaa"
@@ -1433,10 +1438,22 @@ react-dom@18.1.0:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
 
+react-gsap@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-gsap/-/react-gsap-3.2.1.tgz#15c7a0e06c4cdda6ac36ccfcd49f58ba6c3cfbc5"
+  integrity sha512-IX6XiN1a74hmU385yNZAYV1cFe3/Xmbg8eT99VCjmz7yzQq1qIsR47gkX5rkWeml9KmyEgiIzqArYaipPkKIbw==
+  dependencies:
+    react-is "^16.13.1"
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-scrollmagic@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-scrollmagic/-/react-scrollmagic-2.3.0.tgz#6434d4d886225c7d96a135dcbcdd582ce78cff6f"
+  integrity sha512-yVw85uENSPow/ZJxZhPR84nZuyQZQNGfOAaL22+xNAhF5qMX2vbHv0Jeurydc9lS+6OocSY+09MHWQ0LESy9Mg==
 
 react@18.1.0:
   version "18.1.0"
