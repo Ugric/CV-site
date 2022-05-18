@@ -4,7 +4,6 @@ import me from "./images/skiing.jpg";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
-import StyleChangeOnScreen from "./components/elementCssOnScreen";
 
 const Home: NextPage = () => {
   const width = 250;
