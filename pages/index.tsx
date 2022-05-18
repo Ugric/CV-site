@@ -1,24 +1,38 @@
-import type { NextPage } from 'next'
-import wave from './images/wave.png'
-import wave from './images/me.jpeg'
-import styles from '../styles/Home.module.css'
-import Image from 'next/image'
-import { useEffect, useMemo, useState } from 'react';
+import type { NextPage } from "next";
+import wave from "./images/wave.png";
+import me from "./images/skiing.jpg";
+import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import { useEffect, useMemo, useState } from "react";
+import StyleChangeOnScreen from "./components/elementCssOnScreen";
 
 const Home: NextPage = () => {
+  const width = 250;
   return (
     <>
       <div className={styles.top_container}>
-        <h1 className={styles.introduction}>
-          Hey <Image src={wave.src} width="50px" height="50px" alt="👋"></Image>
-          , I'm Will.
-        </h1>
         <div>
-          <Image src={wave.src} width="250px" height="250px" alt="👋"></Image>
+          <h1 className={styles.introduction}>
+            Hey{" "}
+            <Image src={wave.src} width="50px" height="50px" alt="👋"></Image>,
+            I'm Will.
+          </h1>
+          <h2>I'm a software developer.</h2>
         </div>
+        <div>
+          <Image
+            className={styles.my_image}
+            src={me.src}
+            width={width}
+            height={864 * (width / 640)}
+            alt="Me"
+          ></Image>
+        </div>
+      </div>
+      <div>
       </div>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

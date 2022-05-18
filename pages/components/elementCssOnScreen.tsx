@@ -1,0 +1,33 @@
+import React, { useEffect, useRef, useState } from "react";
+
+const StyleChangeOnScreen = (props: {
+  type: string;
+  callableStyle: (onscreen: boolean) => React.CSSProperties;
+  [key: string]: any;
+}) => {
+  const [onscreen, setonscreen] = useState(false);
+  useEffect(() => {
+    const checker = function () {
+      var position = element.current?.getBoundingClientRect();
+
+      // checking for partial visibility
+      if (Number(position?.top) < window.innerHeight && Number(position?.bottom) >= 0) {
+        setonscreen(true);
+      } else {
+        setonscreen(false);
+      }
+    }
+    checker()
+      document.addEventListener("scroll", checker);
+      return () => { document.removeEventListener("scroll", checker) }
+  }, [])
+  const element = useRef <Element>(null);
+  const result = props.callableStyle(onscreen)
+  return React.createElement(props.type, {
+    ...props,
+    style: result,
+    ref: element,
+  });
+};
+
+export default StyleChangeOnScreen;

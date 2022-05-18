@@ -3,23 +3,39 @@
   padding: 6rem;
   display: flex;
   justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-      align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   background-color: #a8ffa8;
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
   color: #005000;
 }
 
-.top_container * {
-  filter: drop-shadow(5px 5px 0px #0050004d);
+.top_container div{
+  text-align: center;
+  filter: drop-shadow(3px 3px 0px #0050004d);
 }
 
 .introduction {
   font-size: 3rem;
   justify-content: center;
+  margin: 0;
 }
 
 .top_bottom {
   align-self: end;
+}
+
+.my_image {
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .top_container {
+    padding: 2rem;
+  flex-direction: column;
+  }
+  .introduction {
+    font-size: 2rem;
+  }
 }
