@@ -1,11 +1,11 @@
 .top_container {
   min-height: 400px;
-  max-height: 100vh;
-  padding: 5rem 6rem;
+  padding: 6rem;
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex-direction: column;
+  justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+      align-items: center;
   background-color: #a8ffa8;
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 5vw));
   color: #005000;
