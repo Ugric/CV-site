@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import { ReactNode } from "react";
 import styles from "/styles/timeline.module.css";
 
@@ -11,7 +12,7 @@ const Timeline = (props: { Timeline: ReactNode[]; [key: string]: any }) => {
       })()}
       className={styles.Timeline}
     >
-      {props.Timeline.map((value, index) => (
+      {props.Timeline?.map((value, index) => (
         <TimelinePoint
           text={value}
           key={index}
