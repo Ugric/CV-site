@@ -9,6 +9,7 @@ const Home: NextPage = () => {
   const width = 250;
   return (
     <>
+      <title></title>
       <div className={styles.top_container}>
         <div>
           <h1 className={styles.introduction}>
