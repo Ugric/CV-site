@@ -1,0 +1,58 @@
+.Timeline {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.Timeline .point {
+  display: flex;
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.Timeline .point h1 {
+    color: white;
+  text-align: start;
+}
+
+.Timeline .point .circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(0, 39, 0);
+  border: 2.5px solid #a8ffa8;
+  top: 50%;
+  transform: translate(-30px, -14px);
+  animation: circle-slide 1s ease-in-out forwards;
+  animation-delay: 0.85s;
+}
+
+@keyframes circle-slide {
+  0% {
+    transform: translate(-30px, -14px);
+  }
+  25% {
+    transform: translate(-30px, -14px);
+  }
+  100% {
+    transform: translate(-14px, -14px);
+  }
+}
+
+.Timeline .point .line {
+  width: 2.5px;
+  position: absolute;
+  height: 100%;
+  background-color: #a8ffa8;
+}
+
+.Timeline .point .text {
+  margin: 1rem;
+  margin-left: 2rem;
+}
