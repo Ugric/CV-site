@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <div>
           <h1 className={styles.introduction}>
             Hey{" "}
-            <Image src={wave.src} width="50px" height="50px" alt="👋"></Image>,
+            <Image src={wave.src} className={styles.wave} width="50px" height="50px" alt="👋"></Image>,
             I'm Will.
           </h1>
           <h2>I'm a software developer.</h2>
@@ -28,7 +28,8 @@ const Home: NextPage = () => {
           ></Image>
         </div>
       </div>
-      <div>
+      <div className={styles.info}>
+        hello world
       </div>
     </>
   );
