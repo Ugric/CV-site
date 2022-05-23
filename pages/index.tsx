@@ -62,7 +62,12 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.emailtext}>
             Get intouch through my email at{" "}
-            <a href="mailto:hi@wbell.dev" className={styles.email}>
+            <a
+              href="mailto:hi@wbell.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.email}
+            >
               hi@wbell.dev
             </a>
           </div>
@@ -117,7 +122,11 @@ const Home: NextPage = () => {
                 <p>
                   Blast AI was a project I created after learning the basics on
                   how AI works from a{" "}
-                  <a href="https://youtu.be/R9OHn5ZF4Uo" target="_blank">
+                  <a
+                    href="https://youtu.be/R9OHn5ZF4Uo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     youtube video
                   </a>
                   .
