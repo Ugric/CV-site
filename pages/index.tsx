@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             ></a>
           </div>
           <div className={styles.emailtext}>
-            Get intouch through my email at{" "}
+            Get in touch through my email at{" "}
             <a
               href="mailto:hi@wbell.dev"
               target="_blank"
