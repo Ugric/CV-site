@@ -53,8 +53,7 @@ const Home: NextPage = () => {
             ></a>
             <a
               className={`${styles.icons} fa fa-youtube`}
-              href="https://www.youtube.com/channel/UCk4f3QSJx3w7c4baWl4ZdUA]'#;#]
-              '"
+              href="https://www.youtube.com/channel/UCk4f3QSJx3w7c4baWl4ZdUA"
               target="blank"
             ></a>
           </div>
