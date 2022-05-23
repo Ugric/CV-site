@@ -16,7 +16,7 @@ const Timeline = (props: { Timeline: ReactNode[]; [key: string]: any }) => {
         <TimelinePoint
           text={value}
           key={index}
-          delay={0.25 * index + 1}
+          delay={0.25 * (props.Timeline.length - index - 1) + 1.25}
         ></TimelinePoint>
       ))}
     </div>

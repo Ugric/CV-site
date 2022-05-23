@@ -3,6 +3,14 @@ import wave from "./images/wave.png";
 import me from "./images/skiing.jpg";
 import styles from "../styles/Home.module.css";
 import Timeline from "./components/timeline-points";
+import LogRocket from "logrocket";
+import setupLogRocketReact from "logrocket-react";
+import logrocketid from "./logrocket.json"
+
+if (typeof window !== "undefined") {
+  LogRocket.init(logrocketid);
+  setupLogRocketReact(LogRocket);
+}
 
 const Home: NextPage = () => {
   const width = 250;
