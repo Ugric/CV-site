@@ -52,7 +52,7 @@
 .my_image {
   border-radius: 50px;
 
-  filter: drop-shadow(3px 3px 0px #0050004d);
+  filter: drop-shadow(5px 5px 0px #0050004d);
 }
 .wave {
   animation: wave 1.5s ease-in-out infinite;
