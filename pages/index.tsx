@@ -3,6 +3,7 @@ import wave from "./images/wave.png";
 import me from "./images/skiing.jpg";
 import styles from "../styles/Home.module.css";
 import Timeline from "./components/timeline-points";
+import 'font-awesome/css/font-awesome.min.css';
 
 const Home: NextPage = () => {
   const width = 250;
@@ -31,6 +32,12 @@ const Home: NextPage = () => {
             height={864 * (width / 640)}
             alt="Me"
           ></img>
+          <div className={styles.bottom_Icons}>
+            <a className={`${styles.icons} fa fa-github`} href="https://github.com/Ugric" target="_blank"></a>
+            <a className={`${styles.icons} fa fa-coffee`} href="https://www.buymeacoffee.com/WillB" target="_blank"></a>
+            <a className={`${styles.icons} fa fa-youtube`} href="https://www.youtube.com/channel/UCk4f3QSJx3w7c4baWl4ZdUA]'#;#]
+              '" target="_blank"></a>
+          </div>
         </div>
       </div>
       <div className={styles.info}>

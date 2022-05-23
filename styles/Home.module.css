@@ -113,3 +113,20 @@
   position: absolute;
   transform: translate(0, -50%);
 }
+
+
+.bottom_Icons {
+  display: flex;
+  font-size: 50px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+
+.icons {
+  color: #005000 !important;
+  text-decoration: none;
+}
