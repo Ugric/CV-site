@@ -3,7 +3,7 @@
   padding: 6rem;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
   background-color: #a8ffa8;
@@ -37,7 +37,6 @@
 
 .top_container div {
   text-align: center;
-  filter: drop-shadow(3px 3px 0px #0050004d);
 }
 
 .introduction {
@@ -52,6 +51,8 @@
 
 .my_image {
   border-radius: 50px;
+
+  filter: drop-shadow(3px 3px 0px #0050004d);
 }
 .wave {
   animation: wave 1.5s ease-in-out infinite;
@@ -112,4 +113,27 @@
   right: 0;
   position: absolute;
   transform: translate(0, -50%);
+}
+
+
+.bottom_Icons {
+  display: flex;
+  font-size: 50px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  filter: drop-shadow(3px 3px 0px #0050004d);
+}
+
+.icons {
+  color: #005000 !important;
+  text-decoration: none;
+}
+
+.email {
+  color: #005000;
+  font-weight: bold;
 }

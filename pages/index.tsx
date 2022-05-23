@@ -3,6 +3,7 @@ import wave from "./images/wave.png";
 import me from "./images/skiing.jpg";
 import styles from "../styles/Home.module.css";
 import Timeline from "./components/timeline-points";
+import 'font-awesome/css/font-awesome.min.css';
 import LogRocket from "logrocket";
 import setupLogRocketReact from "logrocket-react";
 import logrocketid from "./logrocket.json"
@@ -39,6 +40,28 @@ const Home: NextPage = () => {
             height={864 * (width / 640)}
             alt="Me"
           ></img>
+          <div className={styles.bottom_Icons}>
+            <a
+              className={`${styles.icons} fa fa-github`}
+              href="https://github.com/Ugric"
+              target="blank"
+            ></a>
+            <a
+              className={`${styles.icons} fa fa-coffee`}
+              href="https://www.buymeacoffee.com/WillB"
+              target="blank"
+            ></a>
+            <a
+              className={`${styles.icons} fa fa-youtube`}
+              href="https://www.youtube.com/channel/UCk4f3QSJx3w7c4baWl4ZdUA]'#;#]
+              '"
+              target="blank"
+            ></a>
+          </div>
+          <div className={styles.emailtext}>
+            Get intouch through my email at{" "}
+            <a href="mailto:hi@wbell.dev" className={styles.email}>hi@wbell.dev</a>
+          </div>
         </div>
       </div>
       <div className={styles.info}>
