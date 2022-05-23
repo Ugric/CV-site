@@ -28,9 +28,9 @@ const Home: NextPage = () => {
               alt="👋"
               className={styles.wave}
             ></img>
-            , I'm Will.
+            , I&apos;m Will.
           </h1>
-          <h2>I'm passionate about developing software.</h2>
+          <h2>I&apos;m passionate about developing software.</h2>
         </div>
         <div>
           <img
@@ -44,33 +44,42 @@ const Home: NextPage = () => {
             <a
               className={`${styles.icons} fa fa-github`}
               href="https://github.com/Ugric"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
             ></a>
             <a
               className={`${styles.icons} fa fa-coffee`}
               href="https://www.buymeacoffee.com/WillB"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
             ></a>
             <a
               className={`${styles.icons} fa fa-youtube`}
               href="https://www.youtube.com/channel/UCk4f3QSJx3w7c4baWl4ZdUA"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
             ></a>
           </div>
           <div className={styles.emailtext}>
             Get intouch through my email at{" "}
-            <a href="mailto:hi@wbell.dev" className={styles.email}>hi@wbell.dev</a>
+            <a href="mailto:hi@wbell.dev" className={styles.email}>
+              hi@wbell.dev
+            </a>
           </div>
         </div>
       </div>
       <div className={styles.info}>
         <div className={styles.boxed}>
-          <h1>Some of the projects I've been working on</h1>
+          <h1>Some of the projects I&apos;ve been working on</h1>
           <Timeline
             Timeline={[
               <>
                 <h1>
-                  <a href="https://typechat.world/" target="_blank">
+                  <a
+                    href="https://typechat.world/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     TypeChat
                   </a>
                 </h1>
@@ -82,6 +91,7 @@ const Home: NextPage = () => {
                 <a
                   href="https://github.com/Ugric/typechat"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.source}
                 >
                   Source
@@ -96,6 +106,7 @@ const Home: NextPage = () => {
                 <a
                   href="https://github.com/Ugric/argon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.source}
                 >
                   Source
@@ -114,6 +125,7 @@ const Home: NextPage = () => {
                 <a
                   href="https://github.com/Ugric/blast"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.source}
                 >
                   Source
