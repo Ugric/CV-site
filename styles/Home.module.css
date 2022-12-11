@@ -1,4 +1,6 @@
 .top_container {
+  z-index: 1000;
+  position: relative;
   min-height: 400px;
   padding: 6rem;
   display: flex;
@@ -11,13 +13,16 @@
   color: #005000;
   animation: top-slide 1.5s ease-in-out;
 }
+
 @keyframes top-slide {
   0% {
     transform: translateY(-100%);
   }
+
   25% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -27,9 +32,11 @@
   0% {
     transform: translateY(0px) rotate(10deg);
   }
+
   50% {
     transform: translateY(10px) rotate(-10deg);
   }
+
   100% {
     transform: translateY(0px) rotate(10deg);
   }
@@ -54,6 +61,7 @@
 
   filter: drop-shadow(5px 5px 0px #0050004d);
 }
+
 .wave {
   animation: wave 1.5s ease-in-out infinite;
 }
@@ -69,13 +77,23 @@
     flex-direction: column;
     clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px calc(100% - 10vw));
   }
+
   .introduction {
     font-size: 2rem;
   }
+
   .wave {
     width: 40px;
     height: 40px;
   }
+}
+
+.fade_container {
+  z-index: 1000;
+  position: relative;
+  opacity: 0;
+  height: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .boxed {
@@ -85,10 +103,7 @@
   padding: 2rem;
   max-width: 750px;
   margin: auto;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
   animation-delay: 0.75s;
-  height: 0;
 }
 
 .boxed h1 {
@@ -102,6 +117,7 @@
     opacity: 0;
     transform: translateY(100%);
   }
+
   100% {
     height: auto;
     opacity: 1;
@@ -136,4 +152,19 @@
 .email {
   color: #005000;
   font-weight: bold;
+}
+
+.snow_pile {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  max-height: 250px;
+  width: 100%;
+}
+
+.christmas_message {
+  text-align: center;
+  position: relative;
+  z-index: -2;
 }
