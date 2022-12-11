@@ -129,7 +129,7 @@ const Home: NextPage = () => {
                                         </a>
                                     </h1>
                                     <p>
-                                        I've created and worked on TypeChat
+                                        I&apos;ve created and worked on TypeChat
                                         between 17 Jun 2021 - Feb 2022. It is a
                                         react web application that allows you to
                                         chat and send files.
