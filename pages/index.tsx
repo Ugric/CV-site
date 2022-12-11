@@ -104,6 +104,55 @@ const Home: NextPage = () => {
                                     </p>
                                 </>,
                                 <>
+                                    <h1>
+                                        <a
+                                            href="https://scratch.wbell.dev/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Scratch Senior
+                                        </a>
+                                    </h1>
+                                    <p>
+                                        I made a quick project that uses
+                                        assemblyscript to allow users to make
+                                        javascript like code in a sandbox
+                                        running in the browser using remix.
+                                    </p>
+                                    <a
+                                        href="https://github.com/Ugric/Scratch-Senior"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.source}
+                                    >
+                                        Source
+                                    </a>
+                                </>,
+                                <>
+                                    <h1>
+                                        <a
+                                            href="https://game-of-life.wbell.dev/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Game of Life
+                                        </a>
+                                    </h1>
+                                    <p>
+                                        I made a quick project that runs
+                                        Conway&apos;s Game of Life in the
+                                        browser using qwik.
+                                    </p>
+                                    <a
+                                        href="https://github.com/Ugric/game-of-life"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.source}
+                                    >
+                                        Source
+                                    </a>
+                                </>,
+                                <>
                                     <h1>Argon V2</h1>
                                     <p>
                                         I started reprogrammed Argon in GO to
