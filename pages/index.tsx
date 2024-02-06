@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import wave from "./images/wave.png";
-import me from "./images/skiing.jpg";
+import me from "./images/skiing.png";
 import styles from "../styles/Home.module.css";
 import Timeline from "./components/timeline-points";
 import "font-awesome/css/font-awesome.min.css";

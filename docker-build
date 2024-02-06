@@ -1,0 +1,1 @@
+docker build ./ -t ugric/cv-site:latest
