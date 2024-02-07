@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  shop:
+  site:
     image: ugric/cv-site
     ports:
       - 7000:7000
